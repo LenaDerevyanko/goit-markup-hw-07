@@ -1,0 +1,60 @@
+.section5 {
+    background-color: var(--primary-background-color);
+}   
+.h2-company {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--secondary-text-color);
+    line-height: 1.17;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.client {
+    display: flex;
+    padding: 0;
+}
+.client .list-client {
+    margin-top: 0;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.client .list-client:last-child {
+    margin-right: 0;
+}
+.client .list-client:first-child {
+    margin-left: 0px;
+}
+.list-client .company {
+    display: inline-block;
+    border: 1px solid var(--icon-primary-fill);
+    border-radius: 4px;
+    background-color: var(--primary-background-color);    padding: 0;
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+    transition: fill 250ms var(--timing-function),
+            background-color 250ms var(--timing-function),
+            border 250ms var(--timing-function);
+        }
+.list-client .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-client .company:hover,
+.list-client .company:focus { 
+    border: 1px solid var(--accent-color);
+}
+
+.list-client .icon {
+    fill: var(--icon-primary-fill);
+    transition: fill 250ms var(--timing-function);
+}
+
+.list-client .company:hover .icon,
+.list-client .company:focus .icon {   
+    fill: var(--accent-color);
+}
