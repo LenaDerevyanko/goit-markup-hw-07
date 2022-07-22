@@ -724,11 +724,11 @@ p {
   fill: var(--third-text-color);
 }
 
-.section5 {
+.company__section {
   background-color: var(--primary-background-color);
 }
 
-.h2-company {
+.company__title {
   font-weight: 700;
   font-size: 36px;
   color: var(--secondary-text-color);
@@ -738,28 +738,28 @@ p {
   margin-bottom: 50px;
 }
 
-.client {
+.company__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
 
-.client .list-client {
+.company__item {
   margin-top: 0;
   margin-right: 30px;
   padding: 0;
 }
 
-.client .list-client:last-child {
+.company__item:last-child {
   margin-right: 0;
 }
 
-.client .list-client:first-child {
+.company__item:first-child {
   margin-left: 0px;
 }
 
-.list-client .company {
+.company__link {
   display: inline-block;
   border: 1px solid var(--icon-primary-fill);
   border-radius: 4px;
@@ -772,7 +772,7 @@ p {
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
-.list-client .company {
+.company__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,19 +784,19 @@ p {
           justify-content: center;
 }
 
-.list-client .company:hover,
-.list-client .company:focus {
+.company__link:hover,
+.company__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.list-client .icon {
+.company__icon {
   fill: var(--icon-primary-fill);
   -webkit-transition: fill 250ms var(--timing-function);
   transition: fill 250ms var(--timing-function);
 }
 
-.list-client .company:hover .icon,
-.list-client .company:focus .icon {
+.company__link:hover .company__icon,
+.company__link:focus .company__icon {
   fill: var(--accent-color);
 }
 
