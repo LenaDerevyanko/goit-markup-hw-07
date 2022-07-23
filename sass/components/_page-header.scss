@@ -15,8 +15,7 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-.header {
+
     &__container {
     display: flex;
     justify-content: space-between;
@@ -27,8 +26,7 @@
     margin-bottom: 0;
     padding: 0;
     display: flex;
-}
-    &__nav {
+
         &:hover,
         & :focus {
     color: var(--accent-color);
@@ -136,4 +134,5 @@
     align-items: center;
 }
 
+}
 }

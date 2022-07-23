@@ -12,16 +12,14 @@
 .footer-address {
     &__item {
     margin-bottom: 9px;
-}
-    &__item:last-child {
+    :last-child {
     margin-bottom: 0;
 }
     &__address{
         line-height: 1.71;
     color: var(--third-text-color); 
     transition: color 250ms var(--timing-function);
-}
-    &__address {
+
         &:hover {
     color:var(--accent-color);
 }
@@ -34,8 +32,7 @@
     line-height: 1.71;
     color: var(--fours-text-color);
     transition: color 250ms var(--timing-function);
-}
-    &__mail {
+
         &:hover {
     color: var(--accent-color);
 }
@@ -47,8 +44,7 @@
     line-height: 1.71;
     color: var(--fours-text-color);
     transition: color 250ms var(--timing-function);
-}
-    &__tel {
+
         &:hover {
     color: var(--accent-color);
 }
@@ -58,11 +54,11 @@
 }
 
 }
+}
 .social-network {
     margin: 0;
     padding: 0;
-}
-.social-network {
+
     &__title {
     margin-top: 12px;
     margin-bottom: 20px;
@@ -84,8 +80,7 @@
     &__item {
     margin-right: 10px;
     display: flex;
-}
-    &__item {
+
         &:first-child {
     margin-left: 70px;
 }
@@ -108,8 +103,7 @@
     transition: fill 250ms var(--timing-function),
             background-color 250ms var(--timing-function),
             border 250ms var(--timing-function);
-}
-    &__link {
+
         &:hover,
         &:focus {
     border: 1px solid var(--accent-color);
@@ -136,8 +130,7 @@
     &__form {
     display: flex;
     justify-content: space-between;
-}
-    &__form {
+
         & input::placeholder {
     color: var(--fours-text-color);
     font-family: 'Roboto';
@@ -185,8 +178,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-.button-send {
+
         &__text {
     padding-right: 10px;
 }

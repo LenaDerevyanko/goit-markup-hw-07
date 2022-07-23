@@ -19,15 +19,12 @@
     margin-top: 0;
     margin-right: 30px;
     padding: 0;
-}
-    &__item:last-child {
-    margin-right: 0;
-}
-    &__item:first-child {
-    margin-left: 0px;
+    :last-child {
+    margin-right: 0;}
+    :first-child {
+    margin-left: 0;}
 }
     &__link {
-    display: inline-block;
     border: 1px solid var(--icon-primary-fill);
     border-radius: 4px;
     background-color: var(--primary-background-color);    padding: 0;
@@ -37,26 +34,26 @@
     transition: fill 250ms var(--timing-function),
             background-color 250ms var(--timing-function),
             border 250ms var(--timing-function);
-        }
-    &__link {
+    
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-    &__link:hover,
-    &__link:focus { 
+    :hover,
+    :focus { 
     border: 1px solid var(--accent-color);
-}
+    }
 
+    :hover .company__icon,
+    :focus .company__icon {   
+    fill: var(--accent-color);
+}
+}
     &__icon {
     fill: var(--icon-primary-fill);
     transition: fill 250ms var(--timing-function);
 }
 
-    &__link:hover .company__icon,
-    &__link:focus .company__icon {   
-    fill: var(--accent-color);
-}
+
 
 }

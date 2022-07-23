@@ -8,18 +8,19 @@
     opacity: 1;
     transition: opacity 250ms var(--timing-function),
                 visibility 250ms var(--timing-function);
-}
-
-.backdrop.is-hidden {
+    &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
-.backdrop .is-hidden {
+}   
+    &.is-hidden {
     .modal{
     transform: translate(-50%, -50%) scale(0);
-    }
+    }  
+}     
 }
+
+
 /* стили для модального окна */
 
 
@@ -39,8 +40,7 @@
     cursor: pointer;
     font-family: inherit;
     transition: color 250ms var(--timing-function);
-}
-    &__input{
+
         &:focus {
     outline: none;
     border: 1px solid var(--accent-color);
@@ -77,8 +77,7 @@
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
-}
-.modal {
+
     &__close-button {
     position: absolute;
     top: 8px;
@@ -138,12 +137,12 @@
     padding: 12px 16px;
     margin-top: 4px;
     margin-bottom: 20px;
-}
-    &__textarea:focus {
+    :focus {
     outline: none;
     border: 1px solid var(--accent-color);  
 }
 
+}
 }
 
 /* checkbox*/
@@ -152,8 +151,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-}
-.form-accept {
+
     &__label {
     display: flex;
     flex-direction: row;

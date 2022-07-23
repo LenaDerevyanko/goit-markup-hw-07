@@ -17,8 +17,7 @@
     position: relative;
     padding: 0;
     margin-right: 30px;
-}
-    &__item:last-child {
+    :last-child {
     margin-right: 0;
 }
     &__img {
@@ -46,4 +45,5 @@
     text-align: center;
 }
 
+}
 }
