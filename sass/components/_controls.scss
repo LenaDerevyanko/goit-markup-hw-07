@@ -1,4 +1,5 @@
-.control__radio {
+.control {
+    &__radio {
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
@@ -12,13 +13,13 @@
     list-style-type: none;
     color: var(--secondary-text-color);
 }
-.control__radio-item {
+    &__radio-item {
     margin-right: 8px;
 }
-.control__radio-item:last-child {
+    &__radio-item:last-child {
     margin-right: 0;
 }
-.control__radio-button {
+    &__radio-button {
     padding: 6px 22px;
     border-radius: 4px;
     font-family: 'Roboto';
@@ -31,14 +32,18 @@
                 color 250ms var(--timing-function),
                 background-color 250ms var(--timing-function);
 }
-.control__radio-button:hover,
-.control__radio-button:focus {
+    &__radio-button{
+        &:hover,
+        &:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--accent-color);
     color: var(--third-text-color);
     cursor: pointer;
 }
-.control__radio-button:focus {
+        &:focus {
     background-color: var(--accent-color);
     color: var(--third-text-color);
+}
+}
+
 }

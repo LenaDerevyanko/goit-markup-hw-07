@@ -1,4 +1,5 @@
-.experience__title {
+.experience {
+    &__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -6,24 +7,24 @@
     text-align: center;
     color: var(--secondary-text-color);
 }
-.experience__list {
+    &__list {
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
     padding: 0;
 }
-.experience__item {
+    &__item {
     position: relative;
     padding: 0;
     margin-right: 30px;
 }
-.experience__item:last-child {
+    &__item:last-child {
     margin-right: 0;
 }
-.experience__img {
+    &__img {
     display: block;
 }
-.experience__thumb {
+    &__thumb {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -32,7 +33,7 @@
     height: 70px;
     background-color: var(--background-color-studio);
 }
-.experience__text {
+    &__text {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -43,4 +44,6 @@
     padding-top: 27px;
     padding-bottom: 27px;
     text-align: center;
+}
+
 }

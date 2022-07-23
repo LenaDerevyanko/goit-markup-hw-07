@@ -1,7 +1,8 @@
-.company__section {
+.company {
+    &__section {
     background-color: var(--primary-background-color);
 }   
-.company__title {
+    &__title {
     font-weight: 700;
     font-size: 36px;
     color: var(--secondary-text-color);
@@ -10,22 +11,22 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.company__list {
+    &__list {
     display: flex;
     padding: 0;
 }
-.company__item {
+    &__item {
     margin-top: 0;
     margin-right: 30px;
     padding: 0;
 }
-.company__item:last-child {
+    &__item:last-child {
     margin-right: 0;
 }
-.company__item:first-child {
+    &__item:first-child {
     margin-left: 0px;
 }
-.company__link {
+    &__link {
     display: inline-block;
     border: 1px solid var(--icon-primary-fill);
     border-radius: 4px;
@@ -37,23 +38,25 @@
             background-color 250ms var(--timing-function),
             border 250ms var(--timing-function);
         }
-.company__link {
+    &__link {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.company__link:hover,
-.company__link:focus { 
+    &__link:hover,
+    &__link:focus { 
     border: 1px solid var(--accent-color);
 }
 
-.company__icon {
+    &__icon {
     fill: var(--icon-primary-fill);
     transition: fill 250ms var(--timing-function);
 }
 
-.company__link:hover .company__icon,
-.company__link:focus .company__icon {   
+    &__link:hover .company__icon,
+    &__link:focus .company__icon {   
     fill: var(--accent-color);
+}
+
 }

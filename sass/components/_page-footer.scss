@@ -4,64 +4,66 @@
     padding-top: 60px;
     background-color: var(--third-background-color);
 }
-.footer-container {
+.footer__container {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
-.footer-link {
+.footer-address {
+    &__item {
     margin-bottom: 9px;
 }
-.footer-link:last-child {
+    &__item:last-child {
     margin-bottom: 0;
 }
-.logo-footer {
-    margin-bottom: 20px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--accent-color);
-    display: inline-block;
-    }
-.accent-footer-logo {
-    color: var(--third-text-color);
-}
-.address {
-    line-height: 1.71;
+    &__address{
+        line-height: 1.71;
     color: var(--third-text-color); 
     transition: color 250ms var(--timing-function);
 }
-.address:hover {
+    &__address {
+        &:hover {
     color:var(--accent-color);
 }
-.address:focus {
+        &:focus {
     color: var(--accent-color);
 }
-.mail-footer {
+}
+    &__mail {
     font-weight: 400;
     line-height: 1.71;
     color: var(--fours-text-color);
     transition: color 250ms var(--timing-function);
 }
-.mail-footer:hover {
+    &__mail {
+        &:hover {
     color: var(--accent-color);
 }
-.mail-footer:focus {
+        &:focus {
     color: var(--accent-color);
 }
-.tel-footer {
+}
+    &__tel {
     line-height: 1.71;
     color: var(--fours-text-color);
     transition: color 250ms var(--timing-function);
 }
-.tel-footer:hover {
+    &__tel {
+        &:hover {
     color: var(--accent-color);
 }
-.tel-footer:focus {
+        &:focus {
     color: var(--accent-color);
 }
-.h3-foot {
+}
+
+}
+.social-network {
+    margin: 0;
+    padding: 0;
+}
+.social-network {
+    &__title {
     margin-top: 12px;
     margin-bottom: 20px;
     margin-left: 70px;
@@ -72,28 +74,26 @@
     text-transform: uppercase;   
     color: var(--third-text-color); 
 }
-.footer .social-link {
-    margin: 0;
-    padding: 0;
-}
-.social-foot {
+    &__list {
     display: flex;
     padding: 0;
     margin-top: 20px;
     margin-left: 0;
 }
 
-.social-foot .list {
+    &__item {
     margin-right: 10px;
     display: flex;
 }
-.social-foot .list:first-child {
+    &__item {
+        &:first-child {
     margin-left: 70px;
 }
-.social-foot .list:last-child {
+        &:last-child {
     margin-right: 70px;
 }
-.social-foot .list .menu-link {
+}
+    &__link {
     display: flex;
     align-items: center;
     border: 1px solid var(--third-background-color);
@@ -109,20 +109,21 @@
             background-color 250ms var(--timing-function),
             border 250ms var(--timing-function);
 }
-.social-foot .list .menu-link:hover,
-.social-foot .list .menu-link:focus {
+    &__link {
+        &:hover,
+        &:focus {
     border: 1px solid var(--accent-color);
     border-radius: 50%;
     background-color: var(--accent-color);
 }
-.social-foot .link-icon {
+}
+    &__icon {
     fill: var(--third-text-color);
 }
-.list-team .menu-link:hover .link-icon,
-.list-team .menu-link:focus .link-icon {
-    fill: var(--third-text-color);
+
 }
-.h3-foot-sign {
+.mailsend {
+    &__title {
     margin-top: 12px;
     margin-bottom: 20px;
     margin-right: 70px;
@@ -132,11 +133,12 @@
     text-transform: uppercase;
     color: var(--third-text-color);
 }
-.form-submit {
+    &__form {
     display: flex;
     justify-content: space-between;
 }
-.form-submit input::placeholder {
+    &__form {
+        & input::placeholder {
     color: var(--fours-text-color);
     font-family: 'Roboto';
     font-style: 400;
@@ -144,7 +146,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
 }
-.form-submit input{
+        & input{
     min-width: 358px;
     min-height: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -157,8 +159,11 @@
     color: var(--fours-text-color);
     display: inline;
 }
-.form-submit label {
+        & label {
     color: rgba(117, 117, 117, 1);
+}
+}
+
 }
 .button-send {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -181,10 +186,14 @@
     text-align: center;
     align-items: center;
 }
-.button-send .text {
+.button-send {
+        &__text {
     padding-right: 10px;
 }
 
-.button-send .icon {
+        &__icon {
     fill: var(--third-text-color);
     }
+
+}
+

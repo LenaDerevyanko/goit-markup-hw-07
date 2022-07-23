@@ -19,7 +19,7 @@
     <header class="header">
         <div class="header__container container">
             <nav class="navigation">
-                <a href="./index.html" class="logo header__logo">Web<span class="accent-header-logo">Studio</span></a>
+                <a href="./index.html" class="header__logo">Web<span class="header__logo--accent">Studio</span></a>
                 <ul class="header__nav list nav">
                     <li class="header__nav-item list__item nav__item"><a class="header__nav-link nav__link link"
                             href="./index.html">Студия</a></li>
@@ -46,7 +46,7 @@
         </div>
     </header>
     <main>
-        <section class="section-portfolio section">
+        <section class="section-portfolio">
           <div class="solutions__container container">
             <h1 class="visually-hidden">Список радиокнопок</h1>
             <ul class="control__radio">
@@ -205,48 +205,49 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="address-foot">
-                <a href="./index.html" class="logo-footer">Web<span class="accent-footer-logo">Studio</span></a>
+        <div class="footer__container container">
+            <div class="footer__address ">
+                <a href="./index.html" class="footer__logo">Web<span class="footer__logo--accent">Studio</span></a>
                 <address>
-                    <ul class="list">
-                        <li class="footer-link"><a class="address" href="https://bit.ly/3pXMvUd" target="_blank"
-                                rel="noopener noreferrer">г. Киев,
+                    <ul class="footer-address__list list">
+                        <li class="footer-address__item"><a class="footer-address__address" href="https://bit.ly/3pXMvUd"
+                                target="_blank" rel="noopener noreferrer">г. Киев,
                                 пр-т Леси
                                 Украинки, 26</a></li>
-                        <li class="footer-link"><a href="mailto:info@devstudio.com"
-                                class="mail-footer">info@devstudio.com</a></li>
-                        <li class="footer-link"><a href="tel:+380961111111" class="tel-footer ">+38 096 111 11 11</a></li>
+                        <li class="footer-address__item"><a href="mailto:info@devstudio.com"
+                                class="footer-address__mail">info@devstudio.com</a></li>
+                        <li class="footer-address__item"><a href="tel:+380961111111" class="footer-address__tel">+38 096 111
+                                11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="social-link">
-                <h3 class="h3-foot">присоединяйтесь</h3>
-                <ul class="social-foot">
-                    <li class="list">
-                        <a href="#" class="menu-link">
-                            <svg class="link-icon" width="20px" height="20px" aria-label="link instagram">
+            <div class="social-network">
+                <h3 class="social-network__title">присоединяйтесь</h3>
+                <ul class="social-network__list">
+                    <li class="social-network__item">
+                        <a href="#" class="social-network__link">
+                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link instagram">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="list">
-                        <a href="#" class="menu-link">
-                            <svg class="link-icon" width="20px" height="20px" aria-label="link twitter">
+                    <li class="social-network__item">
+                        <a href="#" class="social-network__link">
+                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link twitter">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="list">
-                        <a href="#" class="menu-link">
-                            <svg class="link-icon" width="20px" height="20px" aria-label="link facebook">
+                    <li class="social-network__item">
+                        <a href="#" class="social-network__link">
+                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link facebook">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="list">
-                        <a href="#" class="menu-link">
-                            <svg class="link-icon" width="20px" height="20px" aria-label="link linkedin">
+                    <li class="social-network__item">
+                        <a href="#" class="social-network__link">
+                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link linkedin">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -254,18 +255,18 @@
                 </ul>
             </div>
             <div class="mailsend">
-                <h3 class="h3-foot-sign">Подпишитесь на рассылку</h3>
-                <form class="form-submit" name="signup_form" autocomplete="on" novalidate>
-                    <label>
-                        <input class="signupmail" type="email" name="email" placeholder="E-mail" />
-                    </label>
-                    <button class="button-send" type="submit"><span class="text">Подписаться</span>
-                        <svg class="icon" width="24px" height="24px" aria-hidden="true">
+                <h3 class="mailsend__title">Подпишитесь на рассылку</h3>
+                <form class="mailsend__form" name="signup_form" autocomplete="on" novalidate>
+                    <div class="bbb">
+                        <label>
+                            <input type="email" name="email" placeholder="E-mail" />
+                        </label>
+                    </div>
+                    <button class="button-send" type="submit"><span class="button-send__text">Подписаться</span>
+                        <svg class="button-send__icon" width="24px" height="24px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
-    
                     </button>
-    
                 </form>
             </div>
         </div>
