@@ -1,5 +1,5 @@
-.solution {
-    &__section {
+.solutions {
+        &__container {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -15,6 +15,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+    &__section {
+    padding: 0;
 }
     &__title {
     margin-top: 0;
@@ -45,6 +48,6 @@
     display: block;
     cursor: pointer;
     border: none;
+    
 }
-
 }

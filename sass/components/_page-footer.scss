@@ -12,54 +12,52 @@
 .footer-address {
     &__item {
     margin-bottom: 9px;
-    :last-child {
+}
+    &__item:last-child {
     margin-bottom: 0;
 }
-    &__address{
-        line-height: 1.71;
+    &__address {
+    line-height: 1.71;
     color: var(--third-text-color); 
     transition: color 250ms var(--timing-function);
-
-        &:hover {
+}
+    &__address:hover {
     color:var(--accent-color);
 }
-        &:focus {
+    &__address:focus {
     color: var(--accent-color);
-}
 }
     &__mail {
     font-weight: 400;
     line-height: 1.71;
     color: var(--fours-text-color);
     transition: color 250ms var(--timing-function);
-
-        &:hover {
+}
+    &__mail:hover {
     color: var(--accent-color);
 }
-        &:focus {
+    &__mail:focus {
     color: var(--accent-color);
-}
 }
     &__tel {
     line-height: 1.71;
     color: var(--fours-text-color);
     transition: color 250ms var(--timing-function);
-
-        &:hover {
+}
+    &__tel:hover {
     color: var(--accent-color);
 }
-        &:focus {
+    &__tel:focus {
     color: var(--accent-color);
-}
 }
 
 }
-}
+
 .social-network {
     margin: 0;
     padding: 0;
 
-    &__title {
+        &__title {
     margin-top: 12px;
     margin-bottom: 20px;
     margin-left: 70px;
@@ -80,13 +78,12 @@
     &__item {
     margin-right: 10px;
     display: flex;
-
-        &:first-child {
+}
+    &__item:first-child {
     margin-left: 70px;
 }
-        &:last-child {
+    &__item:last-child {
     margin-right: 70px;
-}
 }
     &__link {
     display: flex;
@@ -103,15 +100,18 @@
     transition: fill 250ms var(--timing-function),
             background-color 250ms var(--timing-function),
             border 250ms var(--timing-function);
-
-        &:hover,
-        &:focus {
+}
+    &__link:hover,
+    &__link:focus {
     border: 1px solid var(--accent-color);
     border-radius: 50%;
     background-color: var(--accent-color);
 }
-}
     &__icon {
+    fill: var(--third-text-color);
+}
+    &__link:hover &__icon,
+    &__link:focus &__icon {
     fill: var(--third-text-color);
 }
 
@@ -130,8 +130,8 @@
     &__form {
     display: flex;
     justify-content: space-between;
-
-        & input::placeholder {
+}
+    &__form input::placeholder {
     color: var(--fours-text-color);
     font-family: 'Roboto';
     font-style: 400;
@@ -139,7 +139,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
 }
-        & input{
+    &__form input{
     min-width: 358px;
     min-height: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -152,9 +152,8 @@
     color: var(--fours-text-color);
     display: inline;
 }
-        & label {
+    &__form label {
     color: rgba(117, 117, 117, 1);
-}
 }
 
 }
@@ -179,11 +178,11 @@
     text-align: center;
     align-items: center;
 
-        &__text {
+    &__text {
     padding-right: 10px;
 }
 
-        &__icon {
+    &__icon {
     fill: var(--third-text-color);
     }
 

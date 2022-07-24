@@ -5,40 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия</title>
+    <title>Портфолио</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
-   
 
-   
 </head>
 
 <body>
-<!-- Шапка сайта -->
+    <!-- Шапка сайта -->
     <header class="header">
         <div class="header__container container">
             <nav class="navigation">
-                <a href="./index.html" class="header__logo">Web<span class="header__logo--accent">Studio</span></a>
-                <ul class="header__nav list nav">
-                    <li class="header__nav-item list__item nav__item"><a class="header__nav-link nav__link link"
-                            href="./index.html">Студия</a></li>
-                    <li class="header__nav-item list__item nav__item"><a class="header__nav-link nav__link link current"
-                            href="./portfolio.html">Портфолио</a></li>
-                    <li class="header__nav-item list__item nav__item"><a class="header__nav-link nav__link link"
-                            href="#">Контакты</a></li>
+                <a href="./index.html" class="logo header__logo">Web<span class="header__logo--accent">Studio</span></a>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="./index.html">Студия</a></li>
+                    <li class="header__item"><a class="header__link  current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <address class="header-address">
-                <ul class="header__nav list nav">
-                    <li class="header__nav-item list__item nav__item">
-                        <a href="mailto:info@devstudio.com" class="header__nav-mail nav__mail mail">
-                            <svg class="icon"  width="16px" height="12px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-mail" ></use>
+            <address class="header__address">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="mailto:info@devstudio.com" class="header__mail">
+                            <svg class="header__icon" width="16px" height="12px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-mail"></use>
                             </svg>info@devstudio.com</a>
                     </li>
-                    <li class="header__nav-item list__item nav__item"><a href="tel:+380961111111" class="header__nav-tel nav__tel tel">
-                            <svg class="icon" width="10px" height="16px" aria-hidden="true">
+                    <li class="header-nav__item"><a href="tel:+380961111111" class="header__tel">
+                            <svg class="header__icon" width="10px" height="16px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>+38 096 111 11 11</a></li>
                 </ul>
@@ -47,166 +42,182 @@
     </header>
     <main>
         <section class="section-portfolio">
-          <div class="solutions__container container">
-            <h1 class="visually-hidden">Список радиокнопок</h1>
-            <ul class="control__radio">
-                <li class="control__radio-item">
-                    <button class="control__radio-button" type="button">Все</button></li>
-                <li class="control__radio-item">
-                    <button class="control__radio-button" type="button">Веб-сайты</button></li>
-                <li class="control__radio-item">
-                    <button class="control__radio-button" type="button">Приложения</button></li>
-                <li class="control__radio-item">
-                    <button class="control__radio-button" type="button">Дизайн</button></li>
-                <li class="control__radio-item">
-                    <button class="control__radio-button" type="button">Маркетинг</button></li>
-            </ul>
-            <ul class="gallery">
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/note1.jpg" alt="ноутбук с портфолио" width="370">
+            <div class="solutions__container container">
+                <h1 class="visually-hidden">Список радиокнопок</h1>
+                <ul class="control__radio">
+                    <li class="control__radio-item">
+                        <button class="control__radio-button" type="button">Все</button>
+                    </li>
+                    <li class="control__radio-item">
+                        <button class="control__radio-button" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="control__radio-item">
+                        <button class="control__radio-button" type="button">Приложения</button>
+                    </li>
+                    <li class="control__radio-item">
+                        <button class="control__radio-button" type="button">Дизайн</button>
+                    </li>
+                    <li class="control__radio-item">
+                        <button class="control__radio-button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="gallery">
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/note1.jpg" alt="ноутбук с портфолио"
+                                    width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Технокряк</h2>
                                 <p class="gallery__description">Веб-сайт</p>
                             </div>
-                    </a>
-                </li>
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/basketball.jpg" alt="баскетбол" width="370">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/basketball.jpg" alt="баскетбол" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>        
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Постер New Orlean vs Golden Star</h2>
                                 <p class="gallery__description">Дизайн</p>
                             </div>
-                    </a>
-                </li>
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/seafood.jpg" alt="логотип рыбного ресторана" width="370">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/seafood.jpg" alt="логотип рыбного ресторана"
+                                    width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>        
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Ресторан Seafood</h2>
                                 <p class="gallery__description">Приложение</p>
                             </div>
-                    </a>
-                </li>
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/headphones.jpg" alt="наушники" width="370">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/headphones.jpg" alt="наушники" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Проект Prime</h2>
                                 <p class="gallery__description">Маркетинг</p>
                             </div>
-                    </a>
-                </li>
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/box.jpg" alt="коробка" width="370">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/box.jpg" alt="коробка" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>        
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Проект Boxes</h2>
                                 <p class="gallery__description">Приложение</p>
                             </div>
                         </a>
-                </li>
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/monitor.jpg" alt="монитор" width="370">
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/monitor.jpg" alt="монитор" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>        
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Inspiration has no Borders</h2>
                                 <p class="gallery__description">Веб-сайт</p>
                             </div>
                         </a>
-                </li>
-                <li class="gallery__item">
-                    <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/press.jpg" alt="журнал" width="370">
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/press.jpg" alt="журнал" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Издание Limited Edition</h2>
                                 <p class="gallery__description">Дизайн</p>
                             </div>
                         </a>
-                </li>
-                <li class="gallery__item">
+                    </li>
+                    <li class="gallery__item">
                         <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/target.jpg" alt="таргета" width="370">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/target.jpg" alt="таргета" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Проект LAB</h2>
                                 <p class="gallery__description">Маркетинг</p>
                             </div>
                         </a>
-                </li>
-                <li class="gallery__item">
+                    </li>
+                    <li class="gallery__item">
                         <a href="#" class="gallery__link">
-                        <div class="gallery__overlay">
-                            <img class="gallery__img" src="./images/note2.jpg" alt="работа на" width="370">
+                            <div class="gallery__overlay">
+                                <img class="gallery__img" src="./images/note2.jpg" alt="работа на" width="370">
                                 <span class="gallery__text">
-                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                    Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.
                                 </span>
-                        </div>
+                            </div>
                             <div class="gallery__card">
                                 <h2 class="gallery__projects">Growing Business</h2>
                                 <p class="gallery__description">Приложение</p>
                             </div>
                         </a>
-                </li>
-            </ul>
-        </div>
+                    </li>
+                </ul>
+            </div>
 
         </section>
-    
+
     </main>
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
-            <div class="footer__address ">
+            <div class="footer-address ">
                 <a href="./index.html" class="footer__logo">Web<span class="footer__logo--accent">Studio</span></a>
                 <address>
                     <ul class="footer-address__list list">
